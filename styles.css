@@ -33,3 +33,9 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+header-image {
+        display: block;
+        margin: 0 auto;
+        max-width: 150px; /* Tamaño máximo de la imagen */
+}
