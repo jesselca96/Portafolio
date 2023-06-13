@@ -17,10 +17,14 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
+nav ul {
     display: inline;
     margin-right: 10px;
 }
+
+ul {
+    list-style-type: circle;
+  }
 
 nav ul li a {
     color: #fff;
