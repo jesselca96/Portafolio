@@ -40,17 +40,45 @@ footer {
 }
 
 /* Estilos de animación */
-@keyframes fadeIn {
+@keyframes slideInLeft {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateX(-50px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 
-.animated-section {
-    animation: fadeIn 1s ease;
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animated-section.slide-in-left {
+    animation: slideInLeft 1s ease;
+}
+
+.animated-section.fade-in {
+    animation: fadeOut 1s ease;
+}
+
+.animated-section.scale-in {
+    animation: scaleIn 1s ease;
 }
