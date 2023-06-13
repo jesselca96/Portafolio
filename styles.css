@@ -27,68 +27,9 @@ nav ul li a {
     text-decoration: none;
 }
 
-section {
-    padding: 50px;
-    opacity: 0; /* Inicialmente ocultar las secciones */
-}
-
 footer {
     background-color: #333;
     color: #fff;
     padding: 10px;
     text-align: center;
-}
-
-/* Estilos para centrar la imagen */
-  center-image {
-        display: flex;
-        justify-content: center;
-      }
-
-      /* Estilos para la imagen redonda */
-  round-image img {
-        border-radius: 50%;
-      }
-/* Estilos de animación */
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-@keyframes scaleIn {
-    from {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.animated-section.slide-in-left {
-    animation: slideInLeft 1s ease;
-}
-
-.animated-section.fade-in {
-    animation: fadeOut 1s ease;
-}
-
-.animated-section.scale-in {
-    animation: scaleIn 1s ease;
 }
