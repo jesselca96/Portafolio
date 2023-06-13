@@ -39,6 +39,15 @@ footer {
     text-align: center;
 }
 
+.center-image {
+            display: flex;
+            justify-content: center;
+        }
+
+        .center-image img {
+            margin: auto;
+        }
+
 /* Estilos de animación */
 @keyframes slideInLeft {
     from {
