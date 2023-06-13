@@ -40,13 +40,13 @@ footer {
 }
 
 /* Estilos para centrar la imagen */
-      .center-image {
+  center-image {
         display: flex;
         justify-content: center;
       }
 
       /* Estilos para la imagen redonda */
-      .round-image img {
+  round-image img {
         border-radius: 50%;
       }
 /* Estilos de animación */
