@@ -1,82 +1,56 @@
 /* Estilos generales */
-#body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-#header {
+header {
     background-color: #333;
     color: #fff;
-    padding: 20px; 
+    padding: 20px;
 }
 
-#nav ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-#nav ul {
+nav ul li {
     display: inline;
     margin-right: 10px;
 }
 
-#ul {
-    list-style-type: circle;
-  }
-
-#nav ul li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
 }
 
-#section {
+section {
     padding: 50px;
+    opacity: 0; /* Inicialmente ocultar las secciones */
 }
 
-#footer {
-    animation: fadeOut 1s ease;
+footer {
     background-color: #333;
     color: #fff;
     padding: 10px;
     text-align: center;
 }
 
-#about {
-    animation: slideInLeft 1s ease;
-}
-
-#experience {
-    animation: spin 1s ease;
-}
-
-/* Estilos en movimiento */
-@keyframes slideInLeft {
+/* Estilos de animación */
+@keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateX(-50px);
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.animated-section {
+    animation: fadeIn 1s ease;
 }
